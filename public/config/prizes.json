@@ -1,0 +1,64 @@
+{
+  "event": {
+    "title": "Spin & Win"
+  },
+  "theme": {
+    "bg": "#0F0B1E",
+    "surface": "#1A1333",
+    "text": "#FFFFFF",
+    "muted": "#B9B0D6",
+    "primary": "#6C2BD9",
+    "gold": "#FFB800",
+    "sliceColors": ["#6C2BD9", "#FF4D6D", "#00C2A8", "#4A2A9A"]
+  },
+  "prizes": [
+    {
+      "id": "p1",
+      "name": "iPad Air",
+      "tier": "grand",
+      "quantity": 1,
+      "probability": 0.02,
+      "image": "/prizes/ipad.webp"
+    },
+    {
+      "id": "p2",
+      "name": "Wireless Earbuds",
+      "tier": "second",
+      "quantity": 10,
+      "probability": 0.08,
+      "image": "/prizes/earbuds.webp"
+    },
+    {
+      "id": "p3",
+      "name": "Power Bank",
+      "tier": "second",
+      "quantity": 10,
+      "probability": 0.1,
+      "image": "/prizes/powerbank.webp"
+    },
+    {
+      "id": "p4",
+      "name": "Tumbler",
+      "tier": "consolation",
+      "quantity": 30,
+      "probability": 0.2,
+      "image": "/prizes/tumbler.webp"
+    },
+    {
+      "id": "p5",
+      "name": "Tote Bag",
+      "tier": "consolation",
+      "quantity": 25,
+      "probability": 0.25,
+      "image": "/prizes/totebag.webp"
+    },
+    {
+      "id": "p6",
+      "name": "Sticker Pack",
+      "tier": "consolation",
+      "quantity": 150,
+      "probability": 0.35,
+      "image": "/prizes/stickers.webp"
+    }
+  ]
+}
