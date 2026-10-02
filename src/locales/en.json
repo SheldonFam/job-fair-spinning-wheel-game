@@ -1,0 +1,32 @@
+{
+  "prizeList": {
+    "title": "Prize List",
+    "prizesLeft_one": "{{count}} prize left",
+    "prizesLeft_other": "{{count}} prizes left",
+    "left": "{{count}} left",
+    "outOfStock": "Out of stock",
+    "almostGone": "Almost gone"
+  },
+  "tier": {
+    "grand": "Grand prize",
+    "second": "2nd prize",
+    "consolation": "Consolation"
+  },
+  "modal": {
+    "headline": {
+      "grand": "GRAND PRIZE!",
+      "second": "Congratulations!",
+      "consolation": "Nice one!"
+    },
+    "youWon": "You won",
+    "collect": "Show this screen at the booth counter to collect your prize.",
+    "playAgain": "Play again",
+    "close": "Close"
+  },
+  "wheel": {
+    "spin": "SPIN",
+    "instruction": "Tap SPIN to try your luck!",
+    "spinning": "Good luck… the wheel is spinning",
+    "allClaimed": "All prizes have been claimed. Thanks for visiting!"
+  }
+}

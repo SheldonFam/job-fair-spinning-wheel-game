@@ -1,0 +1,39 @@
+{
+  "prizes": {
+    "p1": "iPad Air",
+    "p2": "Fon Telinga Tanpa Wayar",
+    "p3": "Power Bank",
+    "p4": "Tumbler",
+    "p5": "Beg Tote",
+    "p6": "Pek Pelekat"
+  },
+  "prizeList": {
+    "title": "Senarai Hadiah",
+    "prizesLeft_other": "{{count}} hadiah berbaki",
+    "left": "{{count}} lagi",
+    "outOfStock": "Habis stok",
+    "almostGone": "Hampir habis"
+  },
+  "tier": {
+    "grand": "Hadiah utama",
+    "second": "Hadiah kedua",
+    "consolation": "Saguhati"
+  },
+  "modal": {
+    "headline": {
+      "grand": "HADIAH UTAMA!",
+      "second": "Tahniah!",
+      "consolation": "Syabas!"
+    },
+    "youWon": "Anda memenangi",
+    "collect": "Tunjukkan skrin ini di kaunter gerai untuk menuntut hadiah anda.",
+    "playAgain": "Main lagi",
+    "close": "Tutup"
+  },
+  "wheel": {
+    "spin": "PUTAR",
+    "instruction": "Tekan PUTAR untuk mencuba nasib anda!",
+    "spinning": "Semoga berjaya… roda sedang berputar",
+    "allClaimed": "Semua hadiah telah dituntut. Terima kasih kerana berkunjung!"
+  }
+}

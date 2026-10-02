@@ -1,0 +1,39 @@
+{
+  "prizes": {
+    "p1": "iPad Air",
+    "p2": "无线耳机",
+    "p3": "充电宝",
+    "p4": "保温杯",
+    "p5": "帆布袋",
+    "p6": "贴纸包"
+  },
+  "prizeList": {
+    "title": "奖品列表",
+    "prizesLeft_other": "剩余 {{count}} 份奖品",
+    "left": "剩余 {{count}}",
+    "outOfStock": "已领完",
+    "almostGone": "即将领完"
+  },
+  "tier": {
+    "grand": "特等奖",
+    "second": "二等奖",
+    "consolation": "安慰奖"
+  },
+  "modal": {
+    "headline": {
+      "grand": "特等奖！",
+      "second": "恭喜你！",
+      "consolation": "不错哦！"
+    },
+    "youWon": "你赢得了",
+    "collect": "请到展位柜台出示此画面领取奖品。",
+    "playAgain": "再玩一次",
+    "close": "关闭"
+  },
+  "wheel": {
+    "spin": "抽奖",
+    "instruction": "点击「抽奖」试试手气！",
+    "spinning": "祝你好运……转盘正在转动",
+    "allClaimed": "所有奖品已被领完，感谢你的光临！"
+  }
+}
