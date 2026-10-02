@@ -1,0 +1,102 @@
+.wheel-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+/* Holds the wheel, the pointer and the button on top of each other */
+.wheel-frame {
+  position: relative;
+  width: min(420px, 100%);
+  aspect-ratio: 1;
+}
+
+/* The round wheel. Its slices are painted by conic-gradient in Wheel.tsx. */
+.wheel {
+  position: absolute;
+  inset: 0;
+  box-sizing: border-box;
+  border: 8px solid var(--text-h);
+  border-radius: 50%;
+  overflow: hidden;
+  /* Fast start, slow stop */
+  transition: transform 5s cubic-bezier(0.12, 0.7, 0.1, 1);
+}
+
+/* One label per slice. It covers the whole wheel and is rotated to its slice,
+   so its content at the top lands in the middle of that slice. */
+.wheel-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding-top: 6%;
+}
+
+.wheel-label img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Dark pill, so the name is readable on any slice colour */
+.wheel-label span {
+  max-width: 90px;
+  padding: 2px 8px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* The arrow at the top. It does not spin. */
+.wheel-pointer {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  z-index: 1;
+  translate: -50% 0;
+  border: 14px solid transparent;
+  border-top: 28px solid #ffb800;
+  border-bottom: 0;
+}
+
+/* SPIN button in the middle */
+.wheel-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 24%;
+  aspect-ratio: 1;
+  border: 6px solid var(--text-h);
+  border-radius: 50%;
+  background: #ffb800;
+  color: #1a1033;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.wheel-button:disabled {
+  background: var(--border);
+  color: var(--text);
+  cursor: not-allowed;
+}
+
+.wheel-button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* People who asked for less motion get a short spin */
+@media (prefers-reduced-motion: reduce) {
+  .wheel {
+    transition-duration: 1s;
+  }
+}
