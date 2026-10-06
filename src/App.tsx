@@ -17,17 +17,19 @@ const App = () => {
       .then((response) => response.json())
       .then((data: GameConfig) => {
         setConfig(data);
-        setPrizes(data.prizes);
+        const saved = localStorage.getItem("prizes");
+        setPrizes(saved ? JSON.parse(saved) : data.prizes);
         document.documentElement.style.setProperty("--gold", data.theme.gold);
       });
   }, []);
 
   const handleWin = (prize: Prize) => {
-    setPrizes((current) =>
-      current.map((item) =>
-        item.id === prize.id ? { ...item, quantity: item.quantity - 1 } : item,
-      ),
+    const updated = prizes.map((item) =>
+      item.id === prize.id ? { ...item, quantity: item.quantity - 1 } : item,
     );
+
+    setPrizes(updated);
+    localStorage.setItem("prizes", JSON.stringify(updated));
     setWinner(prize);
   };
 

@@ -36,5 +36,12 @@
     "instruction": "Tekan PUTAR untuk mencuba nasib anda!",
     "spinning": "Semoga berjaya… roda sedang berputar",
     "allClaimed": "Semua hadiah telah dituntut. Terima kasih kerana berkunjung!"
+  },
+  "header": {
+    "subtitle": "Karnival Kerjaya 2026"
+  },
+  "footer": {
+    "rules": "1 putaran setiap pengunjung · Selagi stok masih ada",
+    "copyright": "© 2026 Karnival Kerjaya. Hak cipta terpelihara."
   }
 }

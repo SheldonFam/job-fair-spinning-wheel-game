@@ -36,5 +36,12 @@
     "instruction": "点击「抽奖」试试手气！",
     "spinning": "祝你好运……转盘正在转动",
     "allClaimed": "所有奖品已被领完，感谢你的光临！"
+  },
+  "header": {
+    "subtitle": "2026 职业博览会"
+  },
+  "footer": {
+    "rules": "每位访客限转一次 · 送完即止",
+    "copyright": "© 2026 职业博览会 版权所有。"
   }
 }

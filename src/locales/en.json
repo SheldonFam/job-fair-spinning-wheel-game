@@ -29,5 +29,12 @@
     "instruction": "Tap SPIN to try your luck!",
     "spinning": "Good luck… the wheel is spinning",
     "allClaimed": "All prizes have been claimed. Thanks for visiting!"
+  },
+  "header": {
+    "subtitle": "Career Fair 2026"
+  },
+  "footer": {
+    "rules": "1 spin per visitor · While stocks last",
+    "copyright": "© 2026 Career Fair. All rights reserved."
   }
 }

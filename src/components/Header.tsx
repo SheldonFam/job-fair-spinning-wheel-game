@@ -8,14 +8,14 @@ const LANGUAGES: { code: Lang; label: string }[] = [
 ];
 
 export const Header = ({ title }: { title: string }) => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <header className="App-header">
       <div className="App-header-left">
         <div>
           <h1>{title}</h1>
-          <p>Career Fair 2026</p>
+          <p>{t("header.subtitle")}</p>
         </div>
       </div>
 

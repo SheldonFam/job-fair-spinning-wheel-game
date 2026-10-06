@@ -1,8 +1,12 @@
+import { useTranslation } from "react-i18next";
+
 export const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="App-footer">
-      <p>1 spin per visitor · While stocks last</p>
-      <p>© 2026 Career Fair. All rights reserved.</p>
+      <p>{t("footer.rules")}</p>
+      <p>{t("footer.copyright")}</p>
     </footer>
   );
 };
