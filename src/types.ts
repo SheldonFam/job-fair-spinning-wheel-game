@@ -13,6 +13,9 @@ export interface Prize {
 
 export interface GameConfig {
   event: { title: string };
-  theme: { sliceColors: string[] } & Record<string, string | string[]>;
+  theme: {
+    gold: string;
+    sliceColors: string[];
+  };
   prizes: Prize[];
 }

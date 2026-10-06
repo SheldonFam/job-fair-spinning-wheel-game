@@ -9,23 +9,14 @@
   border-bottom: 1px solid var(--border);
 }
 
-.App-header-left {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  text-align: left;
-}
-
 .App-header h1 {
-  margin: 0;
   font-size: 26px;
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: 0;
+  font-weight: 800;
 }
 
 .App-header-left p {
   font-size: 14px;
+  color: var(--muted);
 }
 
 /* Language buttons */
@@ -35,6 +26,7 @@
   padding: 4px;
   border: 1px solid var(--border);
   border-radius: 999px;
+  background: var(--surface);
 }
 
 .App-header-right button {
@@ -44,7 +36,7 @@
   border: 0;
   border-radius: 999px;
   background: transparent;
-  color: var(--text-h);
+  color: var(--text);
   font: inherit;
   font-weight: 700;
   cursor: pointer;
@@ -52,22 +44,23 @@
 
 /* The selected language */
 .App-header-right button[aria-pressed="true"] {
-  background: var(--accent);
-  color: #ffffff;
+  background: var(--gold);
+  color: var(--ink);
 }
 
 .App-header-right button:focus-visible {
-  outline: 3px solid var(--accent);
+  outline: 3px solid var(--text);
   outline-offset: 2px;
 }
 
 /* ---------- Main: wheel on the left, prize list on the right ---------- */
 .App-main {
+  flex-grow: 1;
   display: grid;
   grid-template-columns: 1fr 380px;
   align-items: center;
-  gap: 20px;
-  padding: 0 20px;
+  gap: 40px;
+  padding: 32px 20px;
 }
 
 /* Stack them on small screens */
@@ -79,7 +72,7 @@
 
 /* ---------- Footer ---------- */
 .App-footer {
-  margin-top: auto; /* pushes the footer to the bottom of the page */
+  margin-top: auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -87,4 +80,5 @@
   padding: 16px 20px;
   border-top: 1px solid var(--border);
   font-size: 14px;
+  color: var(--muted);
 }

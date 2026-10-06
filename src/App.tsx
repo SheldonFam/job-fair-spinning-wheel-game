@@ -13,11 +13,12 @@ const App = () => {
   const [winner, setWinner] = useState<Prize | null>(null);
 
   useEffect(() => {
-    fetch("/config/prizes.json")
+    fetch("/data/prizes.json")
       .then((response) => response.json())
       .then((data: GameConfig) => {
         setConfig(data);
         setPrizes(data.prizes);
+        document.documentElement.style.setProperty("--gold", data.theme.gold);
       });
   }, []);
 

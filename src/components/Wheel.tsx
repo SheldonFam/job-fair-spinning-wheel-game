@@ -50,6 +50,8 @@ export const Wheel = ({ prizes, colors, onWin }: WheelProps) => {
 
   return (
     <section className="wheel-section">
+      <h2 className="wheel-title">{t("wheel.title")}</h2>
+
       <div className="wheel-frame">
         <div className="wheel-pointer" aria-hidden="true" />
 
@@ -83,7 +85,7 @@ export const Wheel = ({ prizes, colors, onWin }: WheelProps) => {
         </button>
       </div>
 
-      <p aria-live="polite">
+      <p className="wheel-status" aria-live="polite">
         {available.length === 0
           ? t("wheel.allClaimed")
           : spinning

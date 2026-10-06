@@ -2,15 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
-  padding: 20px;
+  gap: 24px;
+  text-align: center;
+}
+
+.wheel-title {
+  font-size: clamp(24px, 4vw, 34px);
+  font-weight: 700;
 }
 
 /* Holds the wheel, the pointer and the button on top of each other */
 .wheel-frame {
   position: relative;
-  width: min(420px, 100%);
+  width: min(460px, 100%);
   aspect-ratio: 1;
+  container-type: inline-size; /* lets the labels use cqw = % of the wheel's width */
 }
 
 /* The round wheel. Its slices are painted by conic-gradient in Wheel.tsx. */
@@ -18,8 +24,11 @@
   position: absolute;
   inset: 0;
   box-sizing: border-box;
-  border: 8px solid var(--text-h);
+  border: 12px solid var(--surface);
   border-radius: 50%;
+  box-shadow:
+    0 0 0 4px var(--gold),
+    0 24px 60px rgba(0, 0, 0, 0.45);
   overflow: hidden;
   /* Fast start, slow stop */
   transition: transform 5s cubic-bezier(0.12, 0.7, 0.1, 1);
@@ -38,18 +47,18 @@
 }
 
 .wheel-label img {
-  width: 40px;
-  height: 40px;
+  width: 10cqw;
+  height: 10cqw;
 }
 
 /* Dark pill, so the name is readable on any slice colour */
 .wheel-label span {
-  max-width: 90px;
+  max-width: 22cqw;
   padding: 2px 8px;
   border-radius: 8px;
   background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
-  font-size: 12px;
+  font-size: max(11px, 2.9cqw);
   font-weight: 700;
   line-height: 1.2;
 }
@@ -57,13 +66,14 @@
 /* The arrow at the top. It does not spin. */
 .wheel-pointer {
   position: absolute;
-  top: -8px;
+  top: -14px;
   left: 50%;
   z-index: 1;
   translate: -50% 0;
-  border: 14px solid transparent;
-  border-top: 28px solid #ffb800;
+  border: 16px solid transparent;
+  border-top: 32px solid var(--gold);
   border-bottom: 0;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.5));
 }
 
 /* SPIN button in the middle */
@@ -72,31 +82,47 @@
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  width: 24%;
+  width: 26%;
   aspect-ratio: 1;
-  border: 6px solid var(--text-h);
+  border: 6px solid var(--surface);
   border-radius: 50%;
-  background: #ffb800;
-  color: #1a1033;
-  font: inherit;
-  font-weight: 800;
+  background: var(--gold);
+  color: var(--ink);
+  font: 800 clamp(14px, 3vw, 20px) var(--font-heading);
   cursor: pointer;
+  animation: wheel-pulse 2s ease-in-out infinite;
 }
 
 .wheel-button:disabled {
-  background: var(--border);
-  color: var(--text);
+  background: var(--muted);
   cursor: not-allowed;
+  animation: none;
 }
 
 .wheel-button:focus-visible {
-  outline: 3px solid var(--accent);
+  outline: 3px solid var(--text);
   outline-offset: 3px;
 }
 
-/* People who asked for less motion get a short spin */
+.wheel-status {
+  min-height: 1.5em;
+  font-size: 18px;
+  color: var(--muted);
+}
+
+/* Soft glow that invites a click */
+@keyframes wheel-pulse {
+  50% {
+    box-shadow: 0 0 0 14px color-mix(in srgb, var(--gold) 25%, transparent);
+  }
+}
+
+/* People who asked for less motion get a short spin and no pulse */
 @media (prefers-reduced-motion: reduce) {
   .wheel {
     transition-duration: 1s;
+  }
+  .wheel-button {
+    animation: none;
   }
 }

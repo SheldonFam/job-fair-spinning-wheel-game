@@ -24,6 +24,7 @@
     "close": "Close"
   },
   "wheel": {
+    "title": "Spin the wheel. Win a prize.",
     "spin": "SPIN",
     "instruction": "Tap SPIN to try your luck!",
     "spinning": "Good luck… the wheel is spinning",

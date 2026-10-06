@@ -31,6 +31,7 @@
     "close": "Tutup"
   },
   "wheel": {
+    "title": "Putar roda. Menangi hadiah.",
     "spin": "PUTAR",
     "instruction": "Tekan PUTAR untuk mencuba nasib anda!",
     "spinning": "Semoga berjaya… roda sedang berputar",

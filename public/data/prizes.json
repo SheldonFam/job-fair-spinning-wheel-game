@@ -3,11 +3,6 @@
     "title": "Spin & Win"
   },
   "theme": {
-    "bg": "#0F0B1E",
-    "surface": "#1A1333",
-    "text": "#FFFFFF",
-    "muted": "#B9B0D6",
-    "primary": "#6C2BD9",
     "gold": "#FFB800",
     "sliceColors": ["#6C2BD9", "#FF4D6D", "#00C2A8", "#4A2A9A"]
   },
@@ -18,7 +13,7 @@
       "tier": "grand",
       "quantity": 1,
       "probability": 0.02,
-      "image": "/prizes/ipad.webp"
+      "image": "/prizes/ipad.png"
     },
     {
       "id": "p2",
@@ -26,7 +21,7 @@
       "tier": "second",
       "quantity": 10,
       "probability": 0.08,
-      "image": "/prizes/earbuds.webp"
+      "image": "/prizes/earbuds.png"
     },
     {
       "id": "p3",
@@ -34,7 +29,7 @@
       "tier": "second",
       "quantity": 10,
       "probability": 0.1,
-      "image": "/prizes/powerbank.webp"
+      "image": "/prizes/powerbank.png"
     },
     {
       "id": "p4",
@@ -42,7 +37,7 @@
       "tier": "consolation",
       "quantity": 30,
       "probability": 0.2,
-      "image": "/prizes/tumbler.webp"
+      "image": "/prizes/tumbler.png"
     },
     {
       "id": "p5",
@@ -50,7 +45,7 @@
       "tier": "consolation",
       "quantity": 25,
       "probability": 0.25,
-      "image": "/prizes/totebag.webp"
+      "image": "/prizes/totebag.png"
     },
     {
       "id": "p6",
@@ -58,7 +53,7 @@
       "tier": "consolation",
       "quantity": 150,
       "probability": 0.35,
-      "image": "/prizes/stickers.webp"
+      "image": "/prizes/stickers.png"
     }
   ]
 }

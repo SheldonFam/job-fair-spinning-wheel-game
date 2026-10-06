@@ -31,6 +31,7 @@
     "close": "关闭"
   },
   "wheel": {
+    "title": "转动转盘，赢取奖品！",
     "spin": "抽奖",
     "instruction": "点击「抽奖」试试手气！",
     "spinning": "祝你好运……转盘正在转动",
